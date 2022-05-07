@@ -24,7 +24,7 @@
     width: 50%;
     margin: auto;
     font-size: 20px;
-    padding-top: 15px;
+    padding-top: 7px;
     margin-top: 50px;
     margin-bottom: 30px;
     color: white;
@@ -42,6 +42,7 @@
     display: flex;
     margin-bottom: 30px;
     margin-top: 20px;
+
 
 }
 #r_checkbox>div:nth-child(1){
@@ -88,14 +89,15 @@
     margin-top: 20px;
     display: flex;
     justify-content: center;
+    padding-top: 15px;
 
 
 
 }
 #r_proceed>div:last-child img{
     height: 15px;
-    width: 15px;
-    margin-top: 20px;
+    width: 14px;
+    /* margin-top: 20px; */
     /* margin-right: 30px; */
 }
 #r_data {
@@ -133,6 +135,7 @@
     width: 100px;
     border: 1px solid white;
     margin-top: 7px;
+
 }
 #r_col2{
     width: 300px;
@@ -229,8 +232,9 @@
     margin-top: 13px;
 }
 #r_img{
-    height: 50px;
+    height: 40px;
     width: 50px;
+
 }
 #r_cancel{
     height: 18px;
@@ -247,6 +251,7 @@
     display: flex;
     justify-content: end;
     /* border: 1px solid black; */
+    margin-top: 10px;
 }
 #update>button{
     height: 50px;
@@ -256,6 +261,14 @@
     border-radius: 3px;
     margin-right: 10px;
     cursor: pointer;
+}
+#r_pop{
+    background-color: green;
+    color: white;
+    width: 40%;
+    height: 40px;
+    padding-top: 10px;
+    margin-left: 10%;
 }
 
 

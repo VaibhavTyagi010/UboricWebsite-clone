@@ -1,5 +1,12 @@
+import { navbar,navbar1 } from "../component/navbar.js";
+document.querySelector("#navbar").innerHTML=navbar()
+document.querySelector("#vcategorie").innerHTML=navbar1()
 
-
+let home=()=>{
+    console.log("hello")
+    window.location.href="index.html"
+}
+document.querySelector("#vlogo").addEventListener("click",home)
 import {quantity_div} from "../component/common.js"
 // console.log(quantity_div())
 start()
@@ -41,9 +48,9 @@ function appendData(data) {
 
         let col1=document.createElement("div")
         col1.id="r_col1"
-        let cancel=document.createElement("img")
+        let cancel=document.createElement("div")
         cancel.id="r_cancel";
-        cancel.src="../component/circle-xmark-solid.svg"
+        cancel.innerText="X"
         cancel.addEventListener("click",()=>{
             remove(data,index)
         })
@@ -78,7 +85,7 @@ function appendData(data) {
             col5.innerText=price*r_inp.value;
             total_price-=price
             document.getElementById("pp").innerText=total_price
-            if(Number(r_inp.value)==0){
+            if(Number(r_inp.value)<=0){
                 remove(data,index)
             }
 
@@ -89,7 +96,7 @@ function appendData(data) {
             col5.innerText=price*r_inp.value;
             total_price+=price
             document.getElementById("pp").innerText=total_price
-            if(Number(r_inp.value)==0){
+            if(Number(r_inp.value)<=0){
                 remove(data,index)
             }
 
@@ -98,7 +105,7 @@ function appendData(data) {
             col5.innerText=price*r_inp.value;
             total_price=ram_total(document.querySelectorAll("#r_col5"))
             document.getElementById("pp").innerText=total_price
-            if(Number(r_inp.value)==0){
+            if(Number(r_inp.value)<=0){
                 remove(data,index)
             }
 
@@ -130,8 +137,11 @@ function appendData(data) {
 
 function remove(data,index){
     console.log(index)
+    document.getElementById("r_pop").innerText=`Remove ${data[index].name} from cart`;
+    document.getElementById("r_pop").style.display="block"
     data.splice(index,1)
     localStorage.setItem("key_",JSON.stringify(data))
+    window.location.reload()
 }
 appendData(data)
 // let quantity=JSON.parse(localStorage.getItem("qnt")) || 0

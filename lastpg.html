@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lastpg.css">
+</head>
+<body id="body">
+     <div id="initial_box">
+         <h1 class="page_title">Become a Seller</h1> <br>
+        
+     </div>
+     <div id="Home">
+        <p >Home <split id="split">></split> Become a Seller</p>
+     </div>
+   </body>
+   
+   <!-- <..............................................................................> -->
+     <div class="vendor_regis">
+         <h2 id="vendor">Vendor Registration</h2>
+          <p id="vendor_para">Submit the form below to become a vendor on this store.</p>
+           
+          <div id="err_div">
+                 
+          </div>
+
+          <div id="main_box">
+
+              <div >
+                <label >First Name<split id="inp_split">*</split></label> <br>
+                <input  type="text" id="f_name" required>
+              </div>
+              <div id="side_div">
+                <label >Last Name<split id="inp_split">*</split></label> <br>
+                <input type="text" id="l_name" required>
+              </div>
+          </div>
+          <div>
+              <label >Login Username <split id="inp_split">
+                  *
+              </split></label> <br>
+              <input class="width100" type="text" id="user_name" required>
+          </div>
+          <div id="main_box">
+            <div >
+              <label >Email<split id="inp_split">*</split></label> <br>
+              <input id="email" type="email" required>
+            </div>
+            <div id="side_div">
+              <label>Confirm Email<split id="inp_split">*</split></label> <br>
+              <input id="c_email" type="email" required>
+
+            </div>
+           
+           
+        </div>
+        <div>
+            <label>Vendor Name <split id="inp_split">
+                *
+            </split></label> <br>
+            <input  class="width100" id="vendor_name" type="text" required>
+        </div>
+          <p id="important">Important: This is the name that customers see when purchasing your products. Please choose carefully.</p>
+          <label for="">Please describe something about your company and what you sell. <split id="inp_split">*</split>
+        </label> <br>
+        <input class="big_box" id="description" type="text" required>
+        <div id="main_box">
+            <div >
+                <label >PAN No.</label> <br>
+                <input id="pan" maxlength="10" type="text" required>
+              </div>
+              <div id="side_div">
+                <label >GST No.</label> <br>
+                <input  id="gst" type="text" required>
+              </div>
+          </div>
+          <div>
+            <label>Contact No.</label> <br>
+            <input class="width_half"  maxlength="10" id="contact_no" type="number" required>
+        </div>
+        <button id="Reg_button"  onclick="Register()">
+          Register
+     </button>
+        </div>
+       
+      
+     </div>
+     <div id="fix"></div>
+</body>
+</html>
+<script src="lastpg.js"></script>

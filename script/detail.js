@@ -42,8 +42,8 @@ btn.addEventListener("click",function(){
     window.location.href="checkout.html"
 })
 btn1.addEventListener("click",function(){
-    
-    localStorage.setItem("cart",JSON.stringify(data))
+    cart1.push(data[0])
+    localStorage.setItem("cart",JSON.stringify(cart1))
     window.location.href="cart.html"
 })
 

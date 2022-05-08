@@ -101,9 +101,9 @@ document.querySelector("#vlogo").addEventListener("click",home)
  document.querySelector("#v1icon").addEventListener("click",InputSearch1)
 
  document.querySelector("#vinput").addEventListener("keydown",InputSearch)
- let cart1=JSON.parse(localStorage.getItem("cart"))||[]
+    let cart1=JSON.parse(localStorage.getItem("cart"))||[]
 
- document.querySelector("#vvalue").innerText=cart1.length
+document.querySelector("#vvalue").innerText=cart1.length
 
 
 

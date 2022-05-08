@@ -1,0 +1,102 @@
+#pmain{
+    display: flex;
+    gap: 20px;
+}
+#psort{
+    width: 20%;
+    height: 500px;
+}
+#v_products{
+    width: 90%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4,250px);
+    gap: 20px;
+    padding: 20px;
+}
+#v_products>div{
+    height: 300px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;}
+
+#iresize{
+    width: 100%;
+    height: 200px;
+    border-radius: 12px;
+}
+#name_size{
+    width: 100%;
+    height: 30px;
+    overflow: hidden;
+}
+#vrename_price{
+ width: 55px;
+ overflow: hidden;
+ margin: auto;
+}
+#pnum{
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-top: 40px;
+    height: 55px;
+}
+#pnum>p{
+    text-align: center;
+    margin-left: 20px;
+    font-size: 20px;
+    
+}
+#v_addbutton{
+    width: 250px;
+    height: 100px;
+    position:absolute;
+    margin-top: -100px;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    visibility: hidden;
+}
+#v_products>div:hover #v_addbutton{
+   
+    visibility: visible;
+    
+}
+#v_addbutton>button{
+ margin-left: 20px;
+ padding: 10px;
+ height: 40px;
+ border: none;
+ cursor: pointer;
+ box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+#sliderBox{
+    /* border: 1px solid red; */
+    height: 80px;  
+    }
+    #slider{
+    color: transparent;
+    height: 10px;
+    width: 250px;
+    margin-left: 10px;
+    border: 1px solid black;
+    }
+    #slider::-webkit-slider-thumb{
+    opacity: 1;
+    border: 1px solid black;
+    border-radius: 100px;
+    }
+    #v_sort{
+        width: 80%;
+        height: 50px;
+        margin: 20px;
+        font-size: 20px;
+        margin-top: 40px;
+    }
+    #limg
+    {
+        width: 100%;
+        height: 100%;
+        margin-left: 100%;
+    }

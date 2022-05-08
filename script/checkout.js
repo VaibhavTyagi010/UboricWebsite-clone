@@ -10,9 +10,9 @@ document.querySelector("#vcategorie").innerHTML=navbar1()
 // })
 
 const wrapper= document.querySelector(".wrapper");
-selectBtn = wrapper.querySelector(".select-btn");
-searchInp = wrapper.querySelector("input");
-Options = wrapper.querySelector(".options");
+const selectBtn = wrapper.querySelector(".select-btn00");
+const searchInp = wrapper.querySelector("input");
+const Options = wrapper.querySelector(".options");
 
 let countries = ["Afghanistan","Albania","Algeria","American Samoa","Andorra","Angola","Armenia",
 "Aruba","Australia","Austria","Azerbaijan","Bahamas (the)","Bahrain","Bangladesh","Barbados","Belarus",
@@ -54,3 +54,9 @@ console.log(arr)
 selectBtn.addEventListener("click",()=>{
     wrapper.classList.toggle("active");
 })
+
+document.querySelector("#last2222").addEventListener("click", finle)
+function finle(){
+    window.location.href="reserve.html"
+}
+

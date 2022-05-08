@@ -201,7 +201,7 @@ margin-top: 3%;
     line-height: 24px;
     color:#313131  
 }
-.select-btn, .options li{
+.select-btn00, .options li{
     display: flex;
     cursor: pointer;
     align-items: center;
@@ -236,7 +236,7 @@ margin-top: 3%;
 .options li:hover{
     background:blue ;
 }
-.select-btn{
+.select-btn00{
     border: 1px solid rgb(7, 7, 7);
     height: 40px;
     padding-bottom: 2%;
@@ -355,7 +355,7 @@ img{
 
     padding-top: 0%;
 }
-#last2{
+#last2222{
     width: 90%;
     height: 40px;
     border: 1px solid black;

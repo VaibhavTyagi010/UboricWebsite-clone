@@ -1,9 +1,9 @@
 let navbar=()=>{
     return`
-    
+
     <div id="vsearch">
     <div id="input_div"> <input id="vinput" type="search"></div>
-    <div id="v1icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+    <div id="v1icon"><a href="./cart.html"><i class="fa-solid fa-magnifying-glass"></i></a></div>
     </div>
     <img id="vlogo" src="https://www.uboric.com/wp-content/uploads/2021/04/uboric.svg" alt="">
    <div id="vuser" class="signindropdown">
@@ -22,13 +22,13 @@ let navbar=()=>{
     </form>
   </div>
 </div>
-   </div>   
+   </div>
    <div id="vcart">
      <a href="cart.html" style="display: flex; text-decoration: none ;color: #1E516C;">  <i id="vi" class="fa-solid fa-cart-plus"></i><p class="vcount">(</p> <p id="vvalue">0</p><p class="vcount">)</p></a>
-    </div>  
-    
-    
-    
+    </div>
+
+
+
     `
 }
 let navbar1=()=>{
@@ -58,14 +58,14 @@ let navbar1=()=>{
                 <li>Mojdi</li>
                 <li>Sneakers</li>
                 <li>Sports Sandals</li>
-                <li>Sports Shoes</li>  
+                <li>Sports Shoes</li>
             </ul>
-            </li>  
+            </li>
             <li><p style="font-size: 20px; font-weight:bold;">Product clouser</p>
                 <ul id="v2mens">
                     <li>lace up</li>
                     <li>Slip on</li>
-                    
+
                 </ul>
             </li>
             <li><p style="font-size: 20px; font-weight:bold;">Clothing</p>
@@ -95,7 +95,7 @@ let navbar1=()=>{
                 </ul>
 
             </div>
-            
+
             </li>
             <li class="subitem submenu2"><a id="a" href="">Accessories<i style="margin-left: 90px;" class="fa-solid fa-caret-right"></i></i></a>
                 <div class="sub-menu2">
@@ -130,7 +130,7 @@ let navbar1=()=>{
                     </ul>
 
                 </div></li>
-            <li class="subitem submenu4"><a id="a" href="">Electroins<i style="margin-left: 110px;" class="fa-solid fa-caret-right"></i></a>  
+            <li class="subitem submenu4"><a id="a" href="">Electroins<i style="margin-left: 110px;" class="fa-solid fa-caret-right"></i></a>
                     <div class="sub-menu4">
                 <ul class="inner6">
                     <li>Headphone
@@ -149,7 +149,7 @@ let navbar1=()=>{
             <li class="subitem"><a id="a" href="">Anti Punctur Liquid</a></li>
         </ul>
     </div>
-        
+
     </li>
     <li class="item"><a>Customer/Guest Login</a></li>
     <li class="item"><a>Merchant/Bulk Order</a></li>

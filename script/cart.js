@@ -155,7 +155,7 @@ function remove(data,index){
     document.getElementById("r_pop").innerText=`Remove ${data[index].name} from cart`;
     document.getElementById("r_pop").style.display="block"
     data.splice(index,1)
-    localStorage.setItem("key_",JSON.stringify(data))
+    localStorage.setItem("cart",JSON.stringify(data))
     window.location.reload()
 }
 appendData(data)

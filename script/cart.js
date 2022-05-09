@@ -3,7 +3,7 @@ document.querySelector("#navbar").innerHTML=navbar()
 document.querySelector("#vcategorie").innerHTML=navbar1()
 
 let home=()=>{
-    console.log("hello")
+
     window.location.href="index.html"
 }
 document.querySelector("#vlogo").addEventListener("click",home)
@@ -78,7 +78,7 @@ function appendData(data) {
         let r_inp= document.createElement("input")
         r_inp.type="text"
         r_inp.id="r_number"
-        r_inp.value=5
+        r_inp.value=1
         dec.addEventListener("click",()=>{
             // console.log(r_inp.value)
             r_inp.value--
@@ -136,12 +136,13 @@ function appendData(data) {
 };
 
 function remove(data,index){
+    event.preventDefault()
     console.log(index)
     document.getElementById("r_pop").innerText=`Remove ${data[index].name} from cart`;
     document.getElementById("r_pop").style.display="block"
     data.splice(index,1)
-    localStorage.setItem("key_",JSON.stringify(data))
-    window.location.reload()
+    localStorage.setItem("cart",JSON.stringify(data))
+    // window.location.reload()
 }
 appendData(data)
 // let quantity=JSON.parse(localStorage.getItem("qnt")) || 0

@@ -50,13 +50,77 @@ searchInp.addEventListener("keyup",()=>{
 console.log(arr)
 });
 
-
+let price=localStorage.getItem("subtotal")
+price=+price
+console.log(price)
+document.querySelector("#subprice").innerText=`₹${price}`
+let num=0
+if(price<1000)
+{
+     num=Math.floor(price/100)
+    num=+num*10
+    document.querySelector("#charge").innerText=`₹${num}`
+    document.querySelector("#total").innerText=`₹${num+price}`
+}
+else
+{
+document.querySelector("#charge").innerText="Free"
+document.querySelector("#total").innerText=`₹${price}`
+}
+let data=[]
+localStorage.setItem("cart",JSON.stringify(data))
 selectBtn.addEventListener("click",()=>{
     wrapper.classList.toggle("active");
 })
 
-document.querySelector("#last2222").addEventListener("click", finle)
+
 function finle(){
     window.location.href="reserve.html"
 }
+document.querySelector("#last2222").addEventListener("click", finle)
+let InputSearch=(e)=>{
+    let query=document.querySelector("#vinput").value 
+    if(e.key== "Enter" && query!="")
+    {
+       localStorage.setItem("search",query)
+       window.location.href="sproducts.html" 
+    }
 
+}
+let InputSearch1=()=>{
+   let query=document.querySelector("#vinput").value 
+   if(query!="")
+  { localStorage.setItem("search",query)
+   window.location.href="sproducts.html"}
+
+}
+
+document.querySelector("#v1icon").addEventListener("click",InputSearch1)
+
+document.querySelector("#vinput").addEventListener("keydown",InputSearch)
+document.querySelector("#vlogo").addEventListener("click",home)
+function home()
+{
+    window.location.href="index.html"
+}
+document.querySelector("#signinButton").addEventListener("click",logIn)
+function logIn()
+{ 
+event.preventDefault()
+let arr=JSON.parse(localStorage.getItem("sing_data"))||[]
+let name=document.querySelector("#signinEmail").value
+let ans=false
+  arr.map(function(ele)
+  {
+      if(ele.name==name)
+      {
+          ans=true
+      }
+  })
+  if(ans)
+  {
+      alert("logIn successful")
+  }
+  else
+  alert("wrong details")
+}

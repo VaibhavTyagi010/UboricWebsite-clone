@@ -1,94 +1,75 @@
 
-h1{
-    color:#1e516c;
-    margin-left: 45%;
-}
-div{
-  
-    height: 25px;
-    width: 15%;
-    margin: auto;
-}
-a{
- text-decoration: none;
-    
-    margin-left: 20px;
-    margin-right: 20px;
-}
+#v_1upper{
+    margin-left: 600px;
 
-#top2{
-    height: 100px;
-    width: 60%;
-
+}
+#mainlog{
     display: flex;
-    justify-content: space-between;
+    margin-top: 60px;
+    gap: 20px;
 }
-#top2>h2{
-margin: auto;
-}
-#top3{
-    margin-top: 10px;
-    height: 450px;
-    width: 75%;
-   
-    display: flex;
-    /* justify-content: space-between; */
-}
-#last{
-    margin-left: 50%;
-}
-#top3>#Login{
+#mainlog>div{
+    width: 48%;
     height: 500px;
-    width: 35%;
-   
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+    margin: 10px;;
 }
-#top3>#Login>div{
-    height: 100px;
-    
+#log_div{
     width: 100%;
-}
-#con_a{
-    border: 1px solid;
-    background-color: blue;
-    color: white;
-    border-radius: 10px;
-}
-#log_email,#log_pass{
-    height: 50px;
-    width: 80%;
-    margin-left: 15px;
-}
-#log_btn{
-    
-    margin-left: 50px;
-    margin-top: 10px; 
-    height: 50px;
-}
-button:hover{
- background: white;
-}
-#log_btn:hover{
-    background: white;
-    margin-top: 10px;
-    
-   }
-#top3>#Register{
     height: 450px;
-    width: 35%;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    margin-top: 20px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
-#email__{
-   
-    width: 80%;
-    margin-left: 15px;
+#c_google
+{
+    height: 30px;
+    margin-top: 5px;
+    display: flex;
+
 }
-h4,p{
-    margin-left: 15px;
+#c_google>img{
+    height: 100%;
+    width: 50px;
+
 }
-button{
-    margin-left: 55px;
+#btn1{
+    background-color: blue;
+    border: none;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    align-items: center;
+}
+#userdata{
+    margin-top: 40px;
+}
+.in{
+    width: 400px;
     height: 50px;
-    width: 80px;
-    background-color: gold;
+    margin-bottom: 20px;
+}
+#check{
+    
+    width: 15px;
+    height: 15px;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+#login{
+    margin-left: 200px;
+    margin-top: 50px;
+}
+.btnlr{
+    background-color: #FFCE61;
+  
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 400;
+    border: .5px solid;
+    border-radius: 5px;
+
 }

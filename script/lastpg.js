@@ -5,7 +5,6 @@ document.querySelector("#navbar").innerHTML=navbar()
 document.querySelector("#vcategorie").innerHTML=navbar1()
 
 let home=()=>{
-    console.log("hello")
     window.location.href="index.html"
 }
 document.querySelector("#vlogo").addEventListener("click",home)
@@ -27,7 +26,7 @@ function Register(){
          Contact_No : document.getElementById("contact_no").value
     };
   
-   
+ 
 // let item=0
 document.querySelector("#err_div").innerHTML=null
 if(obj.PAN_No.length<=9)
@@ -90,3 +89,25 @@ if(obj.PAN_No.length<=9)
    
    
     }
+    document.querySelector("#Reg_button").addEventListener("click",Register)
+    document.querySelector("#signinButton").addEventListener("click",logIn)
+function logIn()
+{ 
+event.preventDefault()
+let arr=JSON.parse(localStorage.getItem("sing_data"))||[]
+let name=document.querySelector("#signinEmail").value
+let ans=false
+  arr.map(function(ele)
+  {
+      if(ele.name==name)
+      {
+          ans=true
+      }
+  })
+  if(ans)
+  {
+      alert("logIn successful")
+  }
+  else
+  alert("wrong details")
+}

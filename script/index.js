@@ -6,27 +6,28 @@ let home=()=>{
     console.log("hello")
     window.location.href="index.html"
 }
+document.querySelector("#signinButton").addEventListener("click",logIn)
+function logIn()
+{ 
+event.preventDefault()
+let arr=JSON.parse(localStorage.getItem("sing_data"))||[]
+let name=document.querySelector("#signinEmail").value
+let ans=false
+  arr.map(function(ele)
+  {
+      if(ele.name==name)
+      {
+          ans=true
+      }
+  })
+  if(ans)
+  {
+      alert("logIn successful")
+  }
+  else
+  alert("wrong details")
+}
 document.querySelector("#vlogo").addEventListener("click",home)
-// ...............................................................slideshow...........................................................
-// let i=0
-// let slide =(data)=>{
-//  console.log()
-//     setInterval(()=>{
-//         console.log(data)
-//         document.querySelector("#vslide_show").innerHTML=null
-//     let img=document.createElement("img")
-//     img.src=data.ads[i].image
-//     img.setAttribute("id","vslideimg")
-    
-    
-//     document.querySelector("#vslide_show").append(img)
-//     if(i==6)
-//     {
-//         i=0;
-//     }
-//     i++
-//     },3000)
-//  }
  document.querySelector("#kitchen-item").addEventListener("click",myfun)
  function myfun()
  {
@@ -107,58 +108,3 @@ document.querySelector("#vvalue").innerText=cart1.length
 
 
 
-
-
-//  ...............................................................amzon data..............................................................................
-// fetch('https://fakestoreapi.com/products?limit=5')
-//             .then(res=>res.json())
-//             .then(json=>slide(json))
-// const options = {
-// 	method: 'GET',
-// 	headers: {
-// 		'X-RapidAPI-Host': 'wolf-amazon-data-scraper.p.rapidapi.com',
-// 		'X-RapidAPI-Key': '54dffa8cd5msh57df86b0104f57cp142211jsn00eba23e51f3'
-// 	}
-// };
-
-// fetch('https://wolf-amazon-data-scraper.p.rapidapi.com/search/kitchen?api_key=59ef84be287bba26357f5519b0058332', options)
-// 	.then(response => response.json())
-// 	.then(response => slide(response))
-// 	.catch(err => slide(err));
-// const options = {
-// 	method: 'GET',
-// 	headers: {
-// 		'X-RapidAPI-Host': 'wolf-amazon-data-scraper.p.rapidapi.com',
-// 		'X-RapidAPI-Key': '54dffa8cd5msh57df86b0104f57cp142211jsn00eba23e51f3'
-// 	}
-// };
-
-// fetch('https://wolf-amazon-data-scraper.p.rapidapi.com/products/B077QWM132?api_key=59ef84be287bba26357f5519b0058332', options)
-// 	.then(response => response.json())
-// 	.then(response => console.log(response))
-// 	.catch(err => console.error(err));
-// ..................................................mazon 4sec
-// const options = {
-// 	method: 'GET',
-// 	headers: {
-// 		'X-RapidAPI-Host': 'aditi-amazon-data-scraper.p.rapidapi.com',
-// 		'X-RapidAPI-Key': '54dffa8cd5msh57df86b0104f57cp142211jsn00eba23e51f3'
-// 	}
-// };
-
-// fetch('https://aditi-amazon-data-scraper.p.rapidapi.com/search/Macbook%20Air?api_key=ab2df129e9130e8d47bbb894b37aeaf0', options)
-// 	.then(response => response.json())
-// 	.then(response => console.log(response))
-// 	.catch(err => console.error(err));
-// const options = {
-// 	method: 'GET',
-// 	headers: {
-// 		'X-RapidAPI-Host': 'aditi-amazon-data-scraper.p.rapidapi.com',
-// 		'X-RapidAPI-Key': '54dffa8cd5msh57df86b0104f57cp142211jsn00eba23e51f3'
-// 	}
-// };
-
-// fetch('https://aditi-amazon-data-scraper.p.rapidapi.com/products/B08N5N6RSS', options)
-// 	.then(response => response.json())
-// 	.then(response => console.log(response))
-// 	.catch(err => console.error(err));

@@ -137,11 +137,30 @@ let InputSearch1=()=>{
 
 }
 
-v1icon
 document.querySelector("#v1icon").addEventListener("click",InputSearch1)
 
 document.querySelector("#vinput").addEventListener("keydown",InputSearch)
  let input= document.querySelector("#v_sort")
  input.onchange=sort  
 
-
+ document.querySelector("#signinButton").addEventListener("click",logIn)
+ function logIn()
+ { 
+ event.preventDefault()
+ let arr=JSON.parse(localStorage.getItem("sing_data"))||[]
+ let name=document.querySelector("#signinEmail").value
+ let ans=false
+   arr.map(function(ele)
+   {
+       if(ele.name==name)
+       {
+           ans=true
+       }
+   })
+   if(ans)
+   {
+       alert("logIn successful")
+   }
+   else
+   alert("wrong details")
+ }

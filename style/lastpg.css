@@ -305,4 +305,17 @@ input:focus {
     background-color: #cfdadb;  
     text-emphasis-color: black;
 }
+.size87{
+    height: 50px;
+}
 
+a{
+    
+    text-decoration: none;
+    color: black;
+}
+
+.item:hover{
+color: white;
+background-color:aqua
+}

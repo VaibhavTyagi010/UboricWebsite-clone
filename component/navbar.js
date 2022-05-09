@@ -15,7 +15,7 @@ let navbar=()=>{
       <i id="accountLogo" style="padding: 6px;" class="fa-solid fa-user"></i>
       <div class="signindropdown-content">
       <h1>Sign in</h1>
-     <a> <p style="font-size: 20px;" >CREATE AN ACCOUNT</p><a>
+     <a href="New_user.html"> <p style="font-size: 20px;"  >CREATE AN ACCOUNT</p><a>
       <hr/>
     <form>
         <label id="signinBoxtxt">Username or email<span id="redStar"> *</span></label><br/>

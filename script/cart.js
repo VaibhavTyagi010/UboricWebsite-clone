@@ -157,11 +157,11 @@ function remove(data,index){
     document.getElementById("r_pop").style.display="block"
     data.splice(index,1)
     localStorage.setItem("cart",JSON.stringify(data))
-<<<<<<< HEAD
+// <<<<<<< HEAD
     // window.location.reload()
-=======
+// =======
     window.location.reload()
->>>>>>> 299271ccf4f4538b586c47b9c56985b479141cfd
+// >>>>>>> 299271ccf4f4538b586c47b9c56985b479141cfd
 }
 appendData(data)
 // let quantity=JSON.parse(localStorage.getItem("qnt")) || 0

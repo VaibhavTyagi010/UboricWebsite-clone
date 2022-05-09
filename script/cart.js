@@ -58,8 +58,8 @@ function appendData(data) {
         else
         price=total_reviews
         let main=document.createElement("div")
-        
-       
+
+
 
         let col1=document.createElement("div")
         col1.id="r_col1"
@@ -187,7 +187,8 @@ document.getElementById("update").addEventListener("click",()=>{
     window.location.reload()
 })
 document.getElementById("proceedFun").addEventListener("click",()=>{
+    
     localStorage.setItem("subtotal",total_price)
-    window.location.href=""// connect with next page checkout page
+    window.location.href="../checkout.html"// connect with next page checkout page
 
 })

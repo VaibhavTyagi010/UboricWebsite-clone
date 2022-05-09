@@ -1,3 +1,203 @@
+#vname{
+    border: 2px solid #1E516C;
+    height: 120px;
+    margin-bottom: 60px;
+    font-size: 170%;
+    color:#1E516C ;
+    font-weight: 600;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 30px;
+
+
+}
+#detail_main{
+    display: flex;
+    gap: 20px;
+}
+#d_left{
+    
+    width: 40%;
+    height: 500px;
+}
+#d_right{
+    
+    width: 58%;
+    height: auto;
+
+}
+#d_left>img{
+    width: 100%;
+    height: 100%;
+}
+#pro_nmae{
+    height: 120px;
+    margin-bottom: 20px;
+    font-size: 170%;
+    color:#313131 ;
+    font-weight: 600;
+    overflow: hidden;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#vrename_price{
+    width: 100px;
+    overflow: hidden;
+    margin: auto;
+    font-size: 30px;
+    margin-left: 320px;
+    
+   }
+   #pricetag{
+       display: flex;
+       margin-top: 50px;
+   }
+   #pricetag1{
+
+       margin-right: 200px;
+       margin-top: 20px;
+   }
+   .bt_style{
+       width: 20%;
+       height: 40px;
+       margin-left: 100px;
+       background-color: #FFCE61;
+       margin-top: 60px;
+   }
+   /* .......................................................................................... */
+   #enquirybutt{
+    height: 50px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    background-color:
+#ffce61;
+border: 2px solid black;
+margin-left: 80px;
+margin-top: 20px;
+}
+#enquirybutt:hover{
+
+background-color: white;
+cursor:pointer;
+
+}
+#colourfulltext{
+   
+    height: 460px;
+    width: 100%;
+    margin-top: 30px;
+    padding: 14PX 0PX 10PX 14px;
+}
+#preorder{
+    background: -webkit-linear-gradient(
+45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab 80%);
+    background-image: -webkit-linear-gradient(
+45deg, rgb(238, 119, 82), rgb(231, 60, 126), rgb(35, 166, 213), rgb(35, 213, 171) 80%);
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat: initial;
+    background-repeat: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-color: initial;
+    background-clip: border-box;
+    background-clip: border-box;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0px;
+    font-weight: 600;
+    font-size: 19px;
+    font-family: 'Lato', sans-serif;
+}
+   
+
+li{
+    height: 30px;
+    font-family: 'Lato', sans-serif;
+    margin-top: 8px;
+    font-size: 15px;
+    line-height: 34px;
+ 
+   
+}
+#odd{
+    margin-left: -1px;
+  
+}
+#newodd{
+margin-top: 45px;
+}
+#skuholl{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: rgb(155, 155, 155);
+  
+    padding: 14PX 0PX 10PX 40px;
+    line-height: 30px;
+}
+#sku{
+   color: black; 
+   font-weight: 800;
+}
+#icons{
+    height: 100px;
+    width: 400px;
+   
+    margin: 15px 0px 0px 40px;
+    display: flex;
+    margin-left: 10px;
+    padding:14PX 0PX 10PX 30px ;
+   
+}
+#icons>div{
+    margin-left: -1px;
+  
+}
+#icons button{
+    height: 40px;
+    border: transparent;
+    background-color: white;
+    margin: 0px;
+
+}
+#icons button:hover{
+    cursor: pointer;
+    zoom: 90%;
+}
+
+#relatedproducts
+{
+   
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 60px 340px;
+    grid-template-areas:
+          "a a a a"
+          "b c d e";
+    grid-gap: 20px;
+    padding: 0px 15px 20px 20px;
+}
+#relatedproducts>:nth-child(1){
+    grid-area:a;
+    border: 1px sold green;
+    background-color: yellowgreen;
+    margin: 0px 0px 79.2px;
+    font-size: 36px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    color: #313131;
+}
+/* ...................................navbar................................................. */
+/*........................................................................ #navbar css..................................................................... */
 *{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
@@ -23,7 +223,7 @@
     top: 0px;
     background-color: #1e516c;
 }
-/*........................................................................ #navbar css..................................................................... */
+
 #navbar{
     
     display: flex;
@@ -179,14 +379,12 @@ li{
     width: 250px;
     height: 500px;
 	background-color:white;
-	box-shadow: -2px 2px 70px -25px rgba(0,0,0,0.3); 
 	transition: all 0.5s ease;
 	margin-top:25px;
     margin-left:-200px;
 }
 .subitem{
     line-height: 3.5;
-    border: .5px solid gray;
     width: 250px;
     display: flex;
 }
@@ -210,8 +408,6 @@ li{
 }
 .vinner_icon{
     display: inline-block;
-
-    border: 1px solid;
     
     flex-wrap: wrap;
     justify-content: end;
@@ -406,173 +602,6 @@ nav{
 }
 
 }
-
- /*......................................................... slideshow.................................................................. */
- #vslide_show{
-     width: 98%;
-     margin: 20px;
-     height: 450px;
-     margin-top: 20px;
-     background-size: 100% 100%;
-     animation:slider 20s infinite ;
- }
- @keyframes slider {
-     0%{
-        background-image: url('https://c1.wallpaperflare.com/preview/468/990/367/beats-depth-of-field-detail-device.jpg');
-     }
-     20%{
-      background-image: url("https://media.istockphoto.com/photos/open-drawer-with-different-utensils-in-kitchen-top-view-picture-id1307632435?b=1&k=20&m=1307632435&s=170667a&w=0&h=9mfA_V7GqQw1mS1IiX78chY6tUaUhv8rZ1PIEcwgczQ=");
-     }
-     40%{
-     background-image: url("https://c4.wallpaperflare.com/wallpaper/724/723/644/interior-design-room-house-home-apartment-condo-209-desktop-background-images-wallpaper-preview.jpg");
-     }
-     60%{
-        background-image: url("https://c0.wallpaperflare.com/preview/632/439/786/bargain-blouse-bright-choice.jpg");
-     }
-     80%{
-         background-image: url('https://c4.wallpaperflare.com/wallpaper/368/462/529/pills-medicine-capsules-wallpaper-preview.jpg');
-     }
-     100%{
-         background-image: url('https://c0.wallpaperflare.com/preview/152/291/714/aisle-cart-commerce-food.jpg');
-     }
-     
- }
-#kitchen-tag{
-    display: flex;
-    justify-content: center;
-}
-#kname{
-    font-size: 35px;
-    margin-left: 10%;
-    margin-right: 10%;
-    font-weight: bold;
-    color: #1E516C;
-}
-#kitchen-item
-{
-    display: flex;
-    gap: 20px;
-    margin-top: 20px;
-    padding: 20px;
-}
-#kitchen-item>img{
-    width: 33%;
-    height: 300px;
-    transition: 1s ;
-}
-#kitchen-item>img:hover{
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-}
-#vtime{
-    width: 100%;
-    height: 300px;
-    margin-top: 20px;
-    padding: 20px;
-}
-#vtime>img{
-    width: 100%;
-    height: 300px
-}
-#other-tag{
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-}
-#other-tag>div{
-    font-size: 35px;
-    margin-left: 10%;
-    margin-right: 15%;
-    font-weight: bold;
-    color: #1E516C;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100px;
-    text-align:center;
-}
-#v1product{
-    display: flex;
-    margin-top: 5%;
-    gap: 20px;
-    padding: 20px;
-}
-#v1product>div{
-    width: 48%;
-    height: 400px;
-    transition: 1s;
-}
-#v1product>div:hover{
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-}
-#electric>img{
-width: 100%;
-height: 100%;
-}
-#bathroom>img{
-    width: 100%;
-    height: 100%;
-    }
-    .v2product{
-        width: 98%;
-        height: 300px;
-        padding: 20px;
-        transition: 1s;
-    }
-    .v2product:hover{
-        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    }
-    .v2product>img{
-        width: 100%;
-        height: 100%;
-    }
-    #clothing>img{
-        width: 100%;
-        height: 100%;
-        }
-        #painting>img{
-            width: 100%;
-            height: 100%;
-            }
-.v3product{
-    display: flex;
-    gap: 20px;
-    padding: 20px;
-   
-}
-.v3product>img{
-    width: 19%;
-    height: 350px;
-    transition: 1s;
-}
-.v3product>img:hover{
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-}
-#info{
-    width: 85%;
-    margin-left: 8%;
-    height: 600px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    padding: 20px;
-    margin-bottom: 100px;
-}
-
-.vtittel{
-    width: 70%;
-    margin-left: 170px;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    font-weight: bold;
-    color: #1E516C;
-    font-size: 30px;
-    
-}
-#info2{
-    margin-top: 70px;
-    margin-bottom: 20px;
-font-size: 16px;
-color: #313131;
-line-height: 2;
-}
 /* .................................................................log in........................................................................................................ */
 .signindropdown {
     position: relative; 
@@ -668,4 +697,19 @@ line-height: 2;
     border-right: none;
     border-bottom: none;
   }
-  
+  #des{
+    
+      text-align: justify;
+      text-align: center;
+      line-height: 2;
+      width: 60%;
+      height: 300px;
+      margin: auto;
+      margin-top: 60px;
+      font-size: 20px;
+  }
+  #des>p{
+      text-decoration: underline;
+      font-weight: 700;
+      margin-bottom: 20px;
+  }

@@ -1,11 +1,16 @@
 let navbar=()=>{
+
     return`
+
+    <div id="vtopbox"><div id="vtop"> FOR ONLINE PAYMENT EXTRA ₹100 DISCOUNT ON ORDERS ABOVE ₹500 </div></div>
+
+
 
     <div id="vsearch">
     <div id="input_div"> <input id="vinput" type="search"></div>
-    <div id="v1icon"><a href="./cart.html"><i class="fa-solid fa-magnifying-glass"></i></a></div>
+    <div id="v1icon"><a><i style="color:white" class="fa-solid fa-magnifying-glass"></i></a></div>
     </div>
-    <img id="vlogo" src="https://www.uboric.com/wp-content/uploads/2021/04/uboric.svg" alt="">
+   <img id="vlogo" src="https://www.uboric.com/wp-content/uploads/2021/04/uboric.svg" alt="">
    <div id="vuser" class="signindropdown">
       <i id="accountLogo" style="padding: 6px;" class="fa-solid fa-user"></i>
       <div class="signindropdown-content">

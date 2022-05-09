@@ -140,8 +140,10 @@
 }
 #r_col2{
     width: 300px;
+    overflow: hidden;
     border: 1px solid white;
     margin-top: 7px;
+    
 }
 #r_col3{
     width: 100px;

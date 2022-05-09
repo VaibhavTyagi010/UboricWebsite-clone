@@ -9,6 +9,11 @@ let home=()=>{
 document.querySelector("#vlogo").addEventListener("click",home)
 import {quantity_div} from "../component/common.js"
 // console.log(quantity_div())
+let cart1=JSON.parse(localStorage.getItem("cart"))||[]
+console.log(cart1)
+document.querySelector("#vvalue").innerText=cart1.length
+// console.log(cart1)
+
 start()
 function start() {
     let id;
@@ -37,14 +42,24 @@ function getEl(id){
 }
 
 // collect data from local storage and append the data id r_data
-let data= JSON.parse(localStorage.getItem("items"))
-// console.log(data)
+let data= JSON.parse(localStorage.getItem("cart"))
+//  console.log(data)
 let total_price=0;
 function appendData(data) {
     console.log(data)
-    data.forEach(({image,name,price,quantity},index)=>{
-        console.log(index)
+    data.forEach(({image,name,total_reviews},index)=>{
+        let price
+        let str=total_reviews.toString()
+        if(str.length>4)
+        {
+       let num=str[0]+str[1]+str[2]+str[3]
+        price=+num
+        }
+        else
+        price=total_reviews
         let main=document.createElement("div")
+        
+       
 
         let col1=document.createElement("div")
         col1.id="r_col1"

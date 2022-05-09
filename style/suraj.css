@@ -1,0 +1,51 @@
+#gold:hover{
+    color: gold;
+    cursor: pointer;
+    }
+    
+    #New_user_page{
+        margin-left: 100px;
+        text-decoration: none;color: black;
+    }
+    #gold{
+        margin-left: 10px;
+    }
+    #email,#Password{
+        width: 350px;
+        margin-left: 10px;
+    }
+    
+    h3{
+        color: gray;
+        margin-left: 10px;
+    }
+    
+    #sub{
+        margin-top: 10px;
+        width: 350px;
+        background-color: gold;
+        font-size: 15px;
+        margin-left: 10px;
+    }
+    #sub:hover{
+        background-color: white;
+    }
+    #Account{
+        display: flex;
+        justify-content: center;
+    }
+    #home_acc,#acc_home{
+        text-decoration: none;
+        color: #1E516c;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 19px;
+       
+    }
+    div{
+        margin: auto;
+        height: 599px ;
+        width: 380px;
+      
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }

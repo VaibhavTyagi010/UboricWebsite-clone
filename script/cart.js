@@ -190,3 +190,24 @@ document.getElementById("proceedFun").addEventListener("click",()=>{
     window.location.href=""// connect with next page checkout page
 
 })
+document.querySelector("#signinButton").addEventListener("click",logIn)
+function logIn()
+{ 
+event.preventDefault()
+let arr=JSON.parse(localStorage.getItem("sing_data"))||[]
+let name=document.querySelector("#signinEmail").value
+let ans=false
+  arr.map(function(ele)
+  {
+      if(ele.name==name)
+      {
+          ans=true
+      }
+  })
+  if(ans)
+  {
+      alert("logIn successful")
+  }
+  else
+  alert("wrong details")
+}

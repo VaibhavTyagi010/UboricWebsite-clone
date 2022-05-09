@@ -15,7 +15,7 @@ let navbar=()=>{
       <i id="accountLogo" style="padding: 6px;" class="fa-solid fa-user"></i>
       <div class="signindropdown-content">
       <h1>Sign in</h1>
-     <a> <p style="font-size: 20px;" >CREATE AN ACCOUNT</p><a>
+     <a href="New_user.html"> <p style="font-size: 20px;" >CREATE AN ACCOUNT</p><a>
       <hr/>
     <form>
         <label id="signinBoxtxt">Username or email<span id="redStar"> *</span></label><br/>
@@ -40,12 +40,12 @@ let navbar1=()=>{
     return`
     <nav id="nav">
     <ul class="menu">
-    <li class="item"><a>Home</a></li>
+    <li class="item"><a href="index.html">Home</a></li>
     <li class="submenu">
-        <a tabindex="0">Categries
+        <a tabindex="0">Categories
             <i style="padding-left: 5px;" class="fa-solid fa-angle-down"></i>
         </a>
-        <div class="sub-menu">
+        <div  class="sub-menu">
         <ul class="inner">
             <li class="subitem"><a id="a" href="">Fasion <i style="margin-left: 135px;"class="fa-solid fa-caret-right"></i></i></a>
                <div>
@@ -156,9 +156,9 @@ let navbar1=()=>{
     </div>
 
     </li>
-    <li class="item"><a>Customer/Guest Login</a></li>
-    <li class="item"><a>Merchant/Bulk Order</a></li>
-    <li class="item"><a>Become A Seller</a></li>
+     <li class="item"><a href="New_user.html">Customer/Guest Login</a></li>
+    <li class="item"><a href="New_user.html">Merchant/Bulk Order</a></li>
+    <li class="item"><a href="lastpg.html">Become A Seller</a></li>
 </ul>
 
 </nav>`

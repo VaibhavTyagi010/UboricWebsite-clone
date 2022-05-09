@@ -5,106 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./uboric-clone/style/reserve.css">
-    <script src="https://kit.fontawesome.com/17ea0910de.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style/reserve.css">
 </head>
 <body>
-    
-    <div class="md_pay_container">
-        <div class="md_pay_1">
-            <div>
-                <a href="booking.html"><i class="fa-solid fa-xmark fa-lg"></i></a>
-            </div>
-            <p>Your payment options</p>
-        </div>
-        <hr>
-        <div class="md_pay_2">
-            <div>
-                <i class="fa-solid fa-circle-check "></i>
-            </div>
-            <div >
-                <h4 class="md_heading">Fully refundable before Tue, Apr 12</h4>
-                <p>You can change or cancel this stay if plans change. Because flexibity matters.</p>
-            </div>
-        </div>
-        <div class="md_pay_3">
-            <div class="md_pay_3_inner">
-                <h4 class="md_heading">Pay now</h4> 
-                <div>
-                    <div id="md_pay2"><i class="fa-solid fa-circle fa-customize"></i></div>
-                    <div id="md_pay3">We will process your payment in your local currency</div>
-                </div>
-            </div>
-               
-            <div id="md_pay1">
-                <div>
-                    <div>$2743</div>
-                    <div>$2874 total</div> 
-                </div>       
-                    
-                <div>
-                    <button class="pay_now1">Pay now</button>
-                </div>                
-            </div>
-        </div>
-        <br><br><br>
-        <div class="md_pay_4">
-            <div class="md_pay_4_inner">
-                <h4 class="md_heading">Reserve with deposit</h4> 
-                
-                <div class="md_pay_5">
-                    <div id="md_pay2"><i class="fa-solid fa-circle fa-customize"></i></div>
-                    <div id="md_pay3">You will be charged deposits by the property based on the following schedule. Any remaining amount will be due upon arrival.</div>
-                </div>
-                <div class="md_pay_6">
-                    <div id="md_pay2"><i class="fa-solid fa-circle fa-customize"></i></div>
-                    <div id="md_pay3">First night plus tax (after booking)</div></div>
-                </div>
-               
-            <div id="md_pay1">
-                <div>
-                    <div>$2743</div>
-                    <div>$2874 total</div> 
-                </div>       
-                    
-                <div>
-                    <button class="pay_now2">Pay now</button>
-                </div>
-            </div>
-
-
-        </div>
-        <div id="vV_last"> 
-            <button id="vV_last1">Print</button>
-            <button id="vV_last2">Keep Shopping</button>
-        </div>
+    <div style="font-size:40PX ;color:brown ;  text-align: center;">
+        DON'T SHARE YOUR OTP
     </div>
-  
-    
+    <div style="font-size:30px; color:crimson; text-align: center; background-color: white; margin-top: 100px;">
+        PLEASE ENTER YOUR ONE TIME PASSWORD(OTP)
+    </div>
+    <input type="password" name="" id="code" placeholder="Enter OTP">
+    <button id="btn" onclick="myfun()">submit</button>
 </body>
 </html>
-
+<script type="module"></script>
 <script>
-
-document.querySelector(".pay_now1").addEventListener("click",receipt);
-
-function receipt(){
-    window.location.href="receipt.html"
-}
-
-document.querySelector(".pay_now2").addEventListener("click",receipt2);
-
-function receipt2(){
-    window.location.href="receipt.html"
-}
-
-document.querySelector("#vV_last1").addEventListener("click",pay)
-function pay(){
-    alert("Receipt printed successfully");
-}
-
-document.querySelector("#vV_last2").addEventListener("click",pay2)
-function pay2(){
-window.location.href="index.html"
+    let myfun=()=>{
+    let code=document.querySelector("#code").value
+    if(code.length==4)
+    {
+        alert("Payment successful")
+        window.location.href="success.html"
+    }
+    else{
+        alert("worng password")
+    }
 }
 </script>

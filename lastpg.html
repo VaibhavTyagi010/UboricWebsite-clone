@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style/lastpg.css ">
     <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="/style/cart.css">
 </head>
 <body id="body">
  <div>
@@ -39,27 +40,27 @@
 
               <div >
                 <label >First Name<split id="inp_split">*</split></label> <br>
-                <input  type="text" id="f_name" required>
+                <input class="size87" type="text" id="f_name" required>
               </div>
               <div id="side_div">
                 <label >Last Name<split id="inp_split">*</split></label> <br>
-                <input type="text" id="l_name" required>
+                <input class="size87" type="text" id="l_name" required>
               </div>
           </div>
           <div>
               <label >Login Username <split id="inp_split">
                   *
               </split></label> <br>
-              <input class="width100" type="text" id="user_name" required>
+              <input  class="size87" class="width100" type="text" id="user_name" required>
           </div>
           <div id="main_box">
             <div >
               <label >Email<split id="inp_split">*</split></label> <br>
-              <input id="email" type="email" required>
+              <input class="size87" id="email" type="email" required>
             </div>
             <div id="side_div">
               <label>Confirm Email<split id="inp_split">*</split></label> <br>
-              <input id="c_email" type="email" required>
+              <input class="size87" id="c_email" type="email" required>
 
             </div>
            
@@ -69,29 +70,29 @@
             <label>Vendor Name <split id="inp_split">
                 *
             </split></label> <br>
-            <input  class="width100" id="vendor_name" type="text" required>
+            <input class="size87" class="width100" id="vendor_name" type="text" required>
         </div>
           <p id="important">Important: This is the name that customers see when purchasing your products. Please choose carefully.</p>
           <label for="">Please describe something about your company and what you sell. <split id="inp_split">*</split>
         </label> <br>
-        <input class="big_box" id="description" type="text" required>
+        <input class="size87" class="big_box" id="description" type="text" required>
         <div id="main_box">
             <div >
                 <label >PAN No.</label> <br>
-                <input id="pan" maxlength="10" type="text" required>
+                <input class="size87" id="pan" maxlength="10" type="text" required>
               </div>
               <div id="side_div">
                 <label >GST No.</label> <br>
-                <input  id="gst" type="text" required>
+                <input class="size87" id="gst" type="text" required>
               </div>
           </div>
           <div>
             <label>Contact No.</label> <br>
-            <input class="width_half"  maxlength="10" id="contact_no" type="number" required>
+            <input class="size87" class="width_half"  maxlength="10" id="contact_no" type="number" required>
         </div>
-        <button id="Reg_button"  onclick="Register()">
+      <a href="#body">  <button id="Reg_button">
           Register
-     </button>
+     </button></a>
         </div>
        
       

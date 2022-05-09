@@ -7,48 +7,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/style/new_usr.css">
+    <link rel="stylesheet" href="/style/index.css">
+    <link rel="stylesheet" href="/style/cart.css">
 </head>
 
 <body>
-
-    <h1>My account</h1>
+    <div  id="navbar"></div>
+    <div id="vcategorie"></div>
+<div id="v_1upper">
+    <h1 id="h1">My account</h1>
     <div>
         <a href="">Home</a> >
         <a href="">My account</a>
     </div>
-    <div id="top2">
-        <h2>Login</h2>
-        <h2>Register</h2>
-    </div>
-
-    <div id="top3">
-        <div id="Login">
-            <div>
-                <p>Connect with</p>
-                <a id="con_a" href="https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?redirect_uri=https%3A%2F%2Fwww.uboric.com%2Fopenidcallback%2Fgoogle&response_type=code&client_id=828138456133-oc1gbhasijnadbs14fi9p898c1abb3he.apps.googleusercontent.com&scope=email%20profile&access_type=offline&flowName=GeneralOAuthFlow">LOGIN WITH google</a>
-            </div>
-            <div>
-                <p>Username or email address *</p>
-                <input type="text" id="log_email">
-                <p>Password *</p>
-                <input type="text" id="log_pass">
-                <button id="log_btn" onclick="suraj()">LOG IN</button>
-            <p id="last">Lost your password?</p>
-            <hr>
-            </div>
+</div>
+<div id="mainlog">
+    <div>
+        <h1 style="text-align:center ;">Log In</h1>
+        <div id="log_div">
+            <p>Connect with</p>
+            <div id="c_google">
+           <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIYAAABDCAMAAABugo2kAAABI1BMVEX09PTjPissokw6fOzxtQD9+/V5n+syeewtduvj6fLxsQD09vj49vgooUn0+/vjOSSDp+sAmjbgJwDxuQDxuStFgusenkH99/zz7+3y5uTw3tzrv7nokInma2DhRjPhLRHhMhrhSjzolo/xycfquLHkZFfmdGjqo5zw19PgUUHnfHDlf3nqr6nlhXrx0c/jXE/wxXHmWBDpeBnjMyzx1JXrkhHlTiXy6dPmah3ujRPxxV/uoQDkXUDw0Iamvu63y+zz5MZrl+zz37bxv0NekOzWsAhdq1mYtu6urCfH3s2AqTRSrWgdb+tVpEG42cC+rh+Yqy3R3PBioi9otnjX6eOMxJh4u4en0bEjmGIzhsExj6EwmXIun1k2gtMzi7ENniRzrq04VTF1AAADO0lEQVRoge3XaVPaQBgH8CUECdnshgQJAcSgotQL29r7sNraWhpKDxPs3X7/T9FNArkg0ensJk7H//ACB2by83mePQDgJjdhGpjv0zEGerPVajV1gMn7PIJxs73SWTVUJ921zvqGnrkEYtjblI2uXJhF7hqFrY1sIbi5bhgBwaeohV52c4JhX+7OGbwY2+2MCoJvbRsJCLciO3oWBcF9db4d4XQLA/YFgbtqKsIpiNFjXo/NpKkIRd1jzICdKykYNwXvzClkN9kq+rG5kA15e2t/Zb+zJvvbCHvFQI0hdtpN7AY09zreAmKuAGA1glB3iWE2ixDiwYGRhQKvhwejuxrfHSDuG+wVsBVRdPT5B+I2+47A23cOQ4qFRxhkv33qYu3uzCEf5HPHIf/oPZGv3Z9Vo5mTAsBlnudr4gOnIEYvt2I8FHnHwT86zLElbk/c1B4fqoPcbuLwCT9N7emzmKKUGPqOZd7P8yijdLSUlBe0FbroK8TjGKMqlBdHqFKux3RCvehxRrm4OOUT2ozjgLEc+yyFUaerAPBlwHgVn9BERvG6MCiv7OvC+KfZIE2h64iuFOnqDLqBqftG4ko5pb6PBruoGN9Fq0IkIcYSbUZwpoiv30SbAirRBMURzqgzZies+BYpQynlm6XTgEH9TJnNqPiO45DZSPlmZeQ3ZVShzfBuX3ztPUeijJPLER7YOv2T3umK+AE5Cg4hK9FRCRTUD1iHURL5j9w0yExilE4CxugTdYXzO+Uz50c7BwshpbNgvVI/X91IlsZd5ggrisIRg0sgcdgRBzdsxCBSaSmkKBZZIEggh0IOpEwsKYBIDXChfakLrItBnjRUuHA0bTK2pEbDeelDmxQIaV8FfzIYKZy2RB3kscicTGx7YhKTR/s2dQgslokXKE00LhaEiAUF3VK+18ssW+JBzDlHPNqPn0JRoH62xnK5Aym/RrR/GcQjSRPlMgf3+0/aEUwJcqGgVARSbOYIksaQS2uMxo3T7gH0IgFbS4KQTW3xacMIomjzrUGacm5lUwofcmFqWoiCyF+mrcfPGeYOSbLGtokUL5zpbuzZGgIKAJY1tCz3fcaFmLPkC7jJf52/gZtWtdBeC00AAAAASUVORK5CYII=" alt="">
+          <button id="btn1"><p>login with Google</p></button>
         </div>
-
-
-        <div id="Register">
-           <p>Creating an account is quick and easy, and will allow you to move through our checkout quicker.</p>
-           <h4>Email address * </h4>
- <input type="text" id="email__">
- <h4>A link to set a new password will be sent to your email address.</h3>
-<p>Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our privacy policy.</p>
-<button>register</button>       
+        
+       <div id="userdata">
+        <p>Username or email address *</p>
+        <input class="in" id="log_email" type="email">
+        <p>Password *</p>
+        <input class="in" id="log_pass" type="password">
+     <p>  <input id="check" type="checkbox">Remember me</p> 
+     <button class="btnlr" id="login">LogIn</button>
+     
+        </div>
+        <p style="text-align:end ;">Lost your password?</p>
+        </div>
+        
+    </div>
+    <div>
+        
+        <h1 style="text-align:center ;">Register</h1>
+        <div id="log_div">
+            <p>Creating an account is quick and easy, and will allow you to move through our checkout quicker.</p>
+<p style="margin-top: 40px;">Email address *</p>
+<input class="in" type="text">
+<p>A link to set a new password will be sent to your email address.</p>
+<p style="margin-top: 40px;">Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our privacy policy.</p>
+<button class="btnlr" id="login">Register</button>  
 </div>
     </div>
+</div>
+<div style="margin-top:30px">
+    <img style="width:100% ;" src="6.jpg" alt="">
+</div>
+<div id="r_aboutus">
+    <div id="r_playstore"><a href="https://play.google.com/store/apps/details?id=com.uboric"><img src="https://www.uboric.com/wp-content/uploads/2020/08/google-play1.png" ></a></div>
+    <div>
+        <div><a href="">About Us</a></div>
+        <div><a href="">Contact</a></div>
+        <div><a href="">Shipping & Returns</a></div>
+        <div><a href="">My Account</a></div>
+        <div><a href="">Privacy Policy</a></div>
+        <div><a href="">Become A Seller</a></div>
+        <div><a href="">Terms & Conditions</a></div>
+    </div>
+    <div>© 2019 – 2021 UBORIC. ALL RIGHTS RESERVED.</div>
+    <div id="r_f_i">
+        <div><a href="https://www.facebook.com/Uboricllp/"><img class="r_insta" src="./component/facebook-f-brands.svg" alt="" srcset=""></a></div>
+        <div><a href="https://www.instagram.com/uboric_shoes/?igshid=1scv9g4eccoi5"><img class="r_insta" src="./component/instagram-brands.svg" alt="" srcset=""></a></div>
+    </div>
+</div>
 </body>
 </html>
 
-<script src="/script/new_user.js"></script>
+<script src="/script/new_user.js" type="module"></script>
+<script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>

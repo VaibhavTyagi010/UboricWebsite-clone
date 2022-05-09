@@ -76,6 +76,7 @@
 }
 #r_proceed hr{
     width: 80%;
+    margin: auto;
 }
 #r_proceed>div:last-child{
     border: 1px solid black;
@@ -284,6 +285,11 @@
     #heading{
         display: none;
     }
+    #r_data>div div{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+    }
 }
 @media all and (min-width:81px)  and (max-width:420px){
     #r_playstore+div{
@@ -293,5 +299,10 @@
     }
     #heading{
         display: none;
+    }
+    #r_data>div{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
     }
 }

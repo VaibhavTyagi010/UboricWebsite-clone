@@ -3,7 +3,7 @@ document.querySelector("#navbar").innerHTML=navbar()
 document.querySelector("#vcategorie").innerHTML=navbar1()
 
 let home=()=>{
-    console.log("hello")
+
     window.location.href="index.html"
 }
 document.querySelector("#vlogo").addEventListener("click",home)
@@ -58,8 +58,8 @@ function appendData(data) {
         else
         price=total_reviews
         let main=document.createElement("div")
-        
-       
+
+
 
         let col1=document.createElement("div")
         col1.id="r_col1"
@@ -151,12 +151,17 @@ function appendData(data) {
 };
 
 function remove(data,index){
+    event.preventDefault()
     console.log(index)
     document.getElementById("r_pop").innerText=`Remove ${data[index].name} from cart`;
     document.getElementById("r_pop").style.display="block"
     data.splice(index,1)
     localStorage.setItem("cart",JSON.stringify(data))
+<<<<<<< HEAD
+    // window.location.reload()
+=======
     window.location.reload()
+>>>>>>> 299271ccf4f4538b586c47b9c56985b479141cfd
 }
 appendData(data)
 // let quantity=JSON.parse(localStorage.getItem("qnt")) || 0
@@ -186,8 +191,9 @@ document.getElementById("update").addEventListener("click",()=>{
     window.location.reload()
 })
 document.getElementById("proceedFun").addEventListener("click",()=>{
+    
     localStorage.setItem("subtotal",total_price)
-    window.location.href=""// connect with next page checkout page
+    window.location.href="../checkout.html"// connect with next page checkout page
 
 })
 document.querySelector("#signinButton").addEventListener("click",logIn)

@@ -8,3 +8,5 @@ landing page look like:
 
 we focused on website product description section thats why it is easy to choose right product and we tried to make perfect online shopping experience for user.  
 our website is responsive, fast, fuctional and also capable of adding multiple product in cart section.
+
+live link of website:  https://peppy-cactus-084e8e.netlify.app/
